@@ -1,0 +1,32 @@
+{
+  "name": "screenshot-url",
+  "version": "1.0.0",
+  "description": "Take full-page screenshots of any URL via browserbase",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "screenshot-url": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "screenshot",
+    "url",
+    "fullpage",
+    "browserbase",
+    "x402"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "playwright-core": "^1.57.0",
+    "viem": "^2.21.0",
+    "x402-axios": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
